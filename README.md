@@ -4,7 +4,7 @@ The original LiveHHTPHeaders Firefox Add on patched. The original repo is [here]
 Just to be clear, I take no credit here.
 About the repo
 ------
-The structure is exactly the same. The patched version is called livehhtpheaders-0.17-patched.xpi. The structure is exactly the same. The patch lies in the LiveHHTPReplay.js file. Hopefully someone will fork the original project and continue its development :)
+The structure is exactly the same. The patched version is called livehhtpheaders-0.17-patched.xpi. The patch lies in the LiveHHTPReplay.js file. Hopefully someone will fork the original project and continue its development :)
 
 How to 
 ----------
