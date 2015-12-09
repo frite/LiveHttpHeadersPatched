@@ -47,7 +47,7 @@ livehttpheaders.overlay.getHeaderInfo = function(theDocument) {
 
 livehttpheaders.overlay.makeHeaderInfoTab = function() {
   // Only call this function once
-  var doc = ("theDocument" in window) ? theDocument : gDocument;
+  var doc = ("theDocument" in window) ? theDocument : window.opener.gBrowser.selectedBrowser.contentWindowAsCPOW.document;
   var loc = doc.location.protocol;
   const headers = livehttpheaders.overlay.getHeaderInfo(doc);
   if (headers) {
@@ -97,7 +97,7 @@ livehttpheaders.overlay.makeHeaderInfoTab = function() {
 
 livehttpheaders.overlay.saveHeaderInfoTab = function(title) {
 
-  var doc = ("theDocument" in window) ? theDocument : gDocument;
+  var doc = ("theDocument" in window) ? theDocument : window.opener.gBrowser.selectedBrowser.contentWindowAsCPOW.document;
   // First, get the URL and headers
   var txt = doc.location + "\n";
   var headers = livehttpheaders.overlay.getHeaderInfo(doc);
